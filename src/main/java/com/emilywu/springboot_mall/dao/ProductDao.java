@@ -1,5 +1,6 @@
 package com.emilywu.springboot_mall.dao;
 
+import com.emilywu.springboot_mall.constant.ProductCategory;
 import com.emilywu.springboot_mall.dto.ProductRequest;
 import com.emilywu.springboot_mall.model.Product;
 
@@ -7,7 +8,7 @@ import java.util.List;
 
 public interface ProductDao {
 
-    List<Product> getProducts();
+    List<Product> getProducts(ProductCategory category, String search);
 
     Product getProductById(Integer productId);
 
